@@ -42,7 +42,7 @@ This is the roadmap I'll have to develop all the features for my program, I hope
 >       - [ ] Free
 >       - [x] Traverse
 >       - [ ] AppendAtBeginning
->       - [ ] AppendAtEnd
+>       - [x] AppendAtEnd
 >       - [ ] AppendBetween
 >       - [ ] RemoveAtBeginning
 >       - [ ] RemoveAtEnd
