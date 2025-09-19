@@ -18,5 +18,22 @@
       current = current->link; \
     } \
     printf("\n"); \
+  } \
+  \
+  static inline void TYPE##LinkedList_Append(TYPE##LinkedList *head, TYPE data) { \
+    TYPE##LinkedList *current; \
+    TYPE##LinkedList *temp;\
+    \
+    current = head;\
+    temp = (TYPE##LinkedList*)malloc(sizeof(TYPE##LinkedList)); \
+    \
+    temp->data = data; \
+    temp->link = NULL; \
+    \
+    while (current->link != NULL) {\
+      current = current->link;\
+    }\
+    current->link=temp; \
+    return;\
   }
 #endif

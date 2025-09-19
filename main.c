@@ -10,22 +10,21 @@ int main() {
     list = (struct intLinkedList*)malloc(sizeof(struct intLinkedList));
     list->data = 10;
     list->link = NULL;
-
-    intLinkedList *current = (struct intLinkedList*)malloc(sizeof(struct intLinkedList));
-    current->data = 20;
-    current->link = NULL;
-    list->link = current;
+    intLinkedList_Append(list, 20);
+    intLinkedList_Append(list, 30);
+    intLinkedList_Append(list, 40);
+    intLinkedList_Append(list, 50);
 
     // FLOAT TEST
     floatLinkedList *fList = NULL;
     fList = (struct floatLinkedList*)malloc(sizeof(struct floatLinkedList));
-    fList->data = 3.1416f;
+    fList->data = 1.4142f;
     fList->link = NULL;
 
-    floatLinkedList *fCurrent = (struct floatLinkedList*)malloc(sizeof(struct floatLinkedList));
-    fCurrent->data = 2.7182f;
-    fCurrent->link = NULL;
-    fList->link = fCurrent;
+    floatLinkedList_Append(fList, 1.6180f);
+    floatLinkedList_Append(fList, 2.7182f);
+    floatLinkedList_Append(fList, 3.1416f);
+    floatLinkedList_Append(fList, 9.81f);
 
     printf("intLinkedList:\t\t");
     intLinkedList_Traverse(list);
