@@ -33,7 +33,7 @@ These are the structures I will try to implement in my library:
 
 ## Roadmap
 
-This is the roadmap I'll have to develop all the features for my program, I hope I can at least complete 2 data structures.
+This is the current roadmap I'll have to develop all the features for my program, I hope I can at least complete 2 data structures.
 
 ### SingleLinkedLists
 
